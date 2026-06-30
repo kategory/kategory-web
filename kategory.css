@@ -1,0 +1,68 @@
+:root {
+   --kategory-dark-gray: rgb(87, 86, 86);
+   --kategory-red: rgb(227, 6, 19);
+   --kategory-green: rgb(0, 234, 0);
+   --kategory-yellow: rgb(252, 228, 0);
+   --kategory-orange: rgb(255, 126, 0);
+   --kategory-light-blue: rgb(0, 240, 240);
+   --kategory-dark-blue: rgb(25, 118, 225);
+   --kategory-white: rgb(255, 255, 255);
+   --kategory-black: rgb(0, 0, 0);
+   --kategory-serif: "Times New Roman", Times, Baskerville, Georgia, serif;
+   --kategory-mono: "Consolas", "Monaco", "Menlo", "Ubuntu Mono", "source-code-pro", monospace;
+}
+
+html,
+body {
+   min-height: 100%;
+}
+
+body {
+   margin: 0;
+   font-family: var(--kategory-serif);
+   color: var(--kategory-black);
+   background: var(--kategory-white);
+}
+
+code,
+kbd,
+pre,
+samp {
+   font-family: var(--kategory-mono);
+}
+
+.site-shell {
+   min-height: 100vh;
+}
+
+.kategory-home {
+   background:
+      radial-gradient(circle at center, rgba(227, 6, 19, 0.08), transparent 34rem),
+      linear-gradient(135deg, rgba(87, 86, 86, 0.08), transparent 42%);
+}
+
+.kategory-logo {
+   display: block;
+   width: min(72vw, 34rem);
+   height: auto;
+}
+
+.logismy-logo {
+   width: clamp(7rem, 18vw, 12rem);
+   height: auto;
+}
+
+.logismy-home {
+   overflow-x: hidden;
+   background:
+      radial-gradient(circle at center, rgba(227, 6, 19, 0.16), transparent 30rem),
+      linear-gradient(135deg, rgba(87, 86, 86, 0.32), transparent 46%),
+      var(--kategory-black);
+}
+
+.lambda-stage {
+   color: var(--kategory-white);
+   font-size: clamp(12rem, 44vw, 34rem);
+   line-height: 1;
+   text-shadow: 0 0 2rem rgba(227, 6, 19, 0.44);
+}

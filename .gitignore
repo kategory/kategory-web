@@ -1,0 +1,20 @@
+temporary
+Thumbs.db
+
+# Editor backups
+*~
+*.bak
+*.backup
+*.orig
+*.tmp
+
+# Vim / Neovim swap files
+*.swp
+*.swo
+*.swn
+.*.swp
+.*.swo
+
+# Emacs autosave / lock files
+\#*\#
+.\#*
