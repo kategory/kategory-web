@@ -66,3 +66,113 @@ samp {
    line-height: 1;
    text-shadow: 0 0 2rem rgba(227, 6, 19, 0.44);
 }
+
+/* --- Blog Styles --- */
+
+.filter-pill {
+   font-family: var(--kategory-serif);
+   color: var(--kategory-dark-gray);
+   background-color: transparent;
+   border: 1px solid var(--kategory-dark-gray);
+   border-radius: 0;
+   padding: 0.35rem 1rem;
+   transition: all 0.25s ease-in-out;
+}
+
+.filter-pill:hover,
+.filter-pill.active {
+   color: var(--kategory-white);
+   background-color: var(--kategory-dark-gray);
+   border-color: var(--kategory-dark-gray);
+}
+
+.filter-pill.active {
+   box-shadow: 0 0 0.5rem rgba(87, 86, 86, 0.2);
+}
+
+.blog-post-card {
+   background-color: var(--kategory-white);
+   border-color: var(--kategory-dark-gray) !important;
+   transition: all 0.25s ease-in-out;
+}
+
+.blog-post-card:hover {
+   border-color: var(--kategory-red) !important;
+   box-shadow: 0 0.5rem 1.5rem rgba(227, 6, 19, 0.04);
+}
+
+.blog-title-link {
+   color: var(--kategory-black);
+   font-family: var(--kategory-serif);
+   text-decoration: none;
+   transition: color 0.2s ease;
+}
+
+.blog-post-card:hover .blog-title-link,
+.blog-title-link:hover {
+   color: var(--kategory-red);
+}
+
+.badge-category {
+   font-family: var(--kategory-serif);
+   font-weight: normal;
+   color: var(--kategory-dark-gray);
+   background-color: transparent;
+   border: 1px solid var(--kategory-dark-gray);
+   border-radius: 0;
+   padding: 0.25rem 0.6rem;
+}
+
+.back-link {
+   color: var(--kategory-red);
+   font-family: var(--kategory-serif);
+   transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.back-link:hover {
+   color: var(--kategory-red);
+   opacity: 0.8;
+   transform: translateX(-0.25rem);
+}
+
+.kategory-link {
+   color: var(--kategory-red);
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   transition: border-color 0.2s ease;
+}
+
+.kategory-link:hover {
+   color: var(--kategory-red);
+   border-bottom-color: var(--kategory-red);
+}
+
+.blog-content {
+   font-family: var(--kategory-serif);
+   font-size: 1.15rem;
+   line-height: 1.75;
+   color: var(--kategory-black);
+}
+
+.blog-content p {
+   margin-bottom: 1.5rem;
+}
+
+.blog-content strong {
+   color: var(--kategory-black);
+}
+
+.blog-content ul,
+.blog-content ol {
+   margin-bottom: 1.5rem;
+   padding-left: 1.5rem;
+}
+
+.blog-content li {
+   margin-bottom: 0.5rem;
+}
+
+.border-dark-gray {
+   border-color: var(--kategory-dark-gray) !important;
+}
+

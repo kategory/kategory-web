@@ -84,7 +84,7 @@ Drei konkrete "Kostentreiber der KI" anführen, die die Ersparnis auffressen:
 * [KI](https://www.kategory.de/blog/categories/ki)  
 * [Prozesse](https://www.kategory.de/blog/categories/prozesse)
 
-* # 6.3 Ungewollte Entdemokratisierung durch Mangel an Mathematik
+# 6.3 Ungewollte Entdemokratisierung durch Mangel an Mathematik
 
 *   
 * Jörg Kunze16. Jan.  
@@ -267,12 +267,10 @@ Ein europäischer **Compliance-Katalog** für Auftragsverarbeitung würde nicht 
 * [Regulatorik](https://www.kategory.de/blog/categories/regulatorik)  
 * [Datenschutz](https://www.kategory.de/blog/categories/datenschutz)
 
+# 6.7 Die Tyrannei der Notation: Warum BPMN und UML den Fachbereich ausgrenzen
+
 * Jörg Kunze14. Nov. 2025  
 * 2 Min. Lesezeit
-
-## 
-
-# 6.7 Die Tyrannei der Notation: Warum BPMN und UML den Fachbereich ausgrenzen
 
 ## Wenn grafische Syntax zur Barriere wird
 
@@ -444,7 +442,7 @@ Die Konsequenz ist klar: Wir brauchen dringend **mehr Rechtssicherheit und klare
 
 * [Gesetzgebung](https://www.kategory.de/blog/categories/gesetzgebung)
 
-# 6.11 Die Wirkungslosigkeit des Proportionalitätsprinzip in der regulatorischen Gesetzgebung
+# 6.11 Die Wirkungslosigkeit des Proportionalitätsprinzips in der regulatorischen Gesetzgebung
 
 * Jörg Kunze8. Okt. 2025  
 * 2 Min. Lesezeit
