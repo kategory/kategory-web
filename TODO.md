@@ -4,11 +4,6 @@
 
 ## Migration to static website on GitHub
 
-
-
-* Erzeuge README.md
-
-  * Dort soll auch Copyright und ein Verweis auf die Licence stehen
   * Verwandel die übrigen Seiten in pages
   * Erzeuge  ein menu
 

@@ -176,3 +176,69 @@ samp {
    border-color: var(--kategory-dark-gray) !important;
 }
 
+/* --- Layout Styles --- */
+
+.fixed-logo-container {
+   position: fixed;
+   top: 1.5rem;
+   left: 1.5rem;
+   z-index: 1000;
+}
+
+.kategory-logo-fixed {
+   width: clamp(6rem, 15vw, 12rem);
+   height: auto;
+   display: block;
+   filter: drop-shadow(0px 2px 4px rgba(255,255,255,0.5));
+}
+
+.content-wrapper {
+   position: relative;
+   z-index: 1;
+}
+
+.kategory-section {
+   padding-top: 4rem;
+   padding-bottom: 4rem;
+}
+
+.section-light {
+   background-color: var(--kategory-white);
+   color: var(--kategory-black);
+}
+
+.section-dark {
+   background-color: var(--kategory-dark-gray);
+   color: var(--kategory-white);
+}
+
+.kategory-text-link {
+   color: var(--kategory-red);
+   text-decoration: none;
+   border-bottom: 1px solid transparent;
+   transition: border-color 0.2s ease;
+}
+
+.kategory-text-link:hover {
+   color: var(--kategory-red);
+   border-bottom-color: var(--kategory-red);
+}
+
+.section-dark .kategory-text-link {
+   color: var(--kategory-red);
+}
+
+.kategory-btn {
+   background-color: transparent;
+   color: var(--kategory-red);
+   border: 1px solid var(--kategory-red);
+   font-family: var(--kategory-serif);
+   padding: 0.5rem 1.5rem;
+   border-radius: 0;
+   transition: all 0.2s ease;
+}
+
+.kategory-btn:hover {
+   background-color: var(--kategory-red);
+   color: var(--kategory-white);
+}
