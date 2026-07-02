@@ -242,3 +242,43 @@ samp {
    background-color: var(--kategory-red);
    color: var(--kategory-white);
 }
+
+/* --- Menu Styles --- */
+
+.fixed-menu-container {
+   position: fixed;
+   top: 1.5rem;
+   right: 1.5rem;
+   z-index: 1000;
+}
+
+.kategory-nav-bg {
+   background-color: rgba(255, 255, 255, 0.95);
+   backdrop-filter: blur(8px);
+   border: 1px solid var(--kategory-dark-gray);
+   border-radius: 0.25rem;
+   padding: 0.25rem 1rem;
+   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.kategory-nav-link {
+   color: var(--kategory-black) !important;
+   font-family: var(--kategory-serif);
+   font-size: 1.1rem;
+   margin-left: 1rem;
+   transition: color 0.2s ease;
+}
+
+.kategory-nav-link:hover {
+   color: var(--kategory-red) !important;
+}
+
+.navbar-toggler {
+   border: 1px solid var(--kategory-dark-gray) !important;
+   border-radius: 0 !important;
+   padding: 0.25rem 0.5rem;
+}
+
+.navbar-toggler:focus {
+   box-shadow: 0 0 0 0.25rem rgba(87, 86, 86, 0.25) !important;
+}

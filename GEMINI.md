@@ -35,3 +35,14 @@ Dunkelgrau für geometrische gestalltungen (Rahmen, dunkle Flächen ... )
 
 kategory wird spätetr über kategory.de erreicht werden
 
+## Menü-Integration
+Das Navigationsmenü der Webseite wird nach dem "Client-Side Include"-Prinzip per JavaScript geladen (Single Source of Truth), damit Änderungen am Menü nur an einer zentralen Stelle erfolgen müssen:
+- **`menu.html`**: Enthält ausschließlich die HTML-Struktur des Bootstrap-Menüs. Alle Links innerhalb der `menu.html` müssen **absolut** adressiert werden (z. B. `href="/index.html#prozesse"` statt relativer Pfade), da das Menü aus unterschiedlichen Verzeichnistiefen (z. B. aus dem `/blog`-Ordner) geladen wird.
+- **`menu.js`**: Ein kurzes Skript, das die `menu.html` per `fetch("/menu.html")` (ebenfalls absolut adressiert) lädt und in den DOM einfügt.
+- **Einbindung in Seiten**: Jede HTML-Seite, die das Menü anzeigen soll, benötigt an der gewünschten Stelle den Platzhalter `<div id="menu-container"></div>` und muss vor dem schließenden `</body>`-Tag das Skript `<script src="/menu.js"></script>` einbinden.
+- **Lokales Testen**: Aufgrund der CORS/Same-Origin-Policy von Browsern kann das lokale Testen dieses Setups nicht über das `file:///`-Protokoll erfolgen. Es muss ein lokaler Webserver gestartet werden (z. B. `python -m http.server 8000` im Root-Verzeichnis), um die Seite unter `http://localhost:8000` aufzurufen.
+
+## Umgang mit Skripten (Agenten-Policy)
+Im Zuge der Entwicklung mit KI-Agenten fallen häufig kleine Migrations- oder Automatisierungsskripte an (z. B. Skripte, die einmalig Text in vielen Dateien ersetzen). Da der Aufwand zur Erstellung solcher Skripte minimal ist, gilt folgende Regelung:
+- **Einmal-Skripte** (z. B. temporäre Migrationen) werden **nicht** in das Versionskontrollsystem (Git) übernommen. Sie sind nach erfolgreicher Ausführung sofort wieder zu löschen, um technische Schulden und "toten Code" im Repository zu vermeiden.
+- **Wiederkehrende Werkzeuge**, die regelmäßig im Betrieb oder Build-Prozess benötigt werden, gehören hingegen ins Repository (idealerweise in einen separaten `/scripts`- oder `/tools`-Ordner).
