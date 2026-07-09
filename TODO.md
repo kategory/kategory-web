@@ -7,7 +7,4 @@
 
    * Das Grau zum trennen der Abschnitte ist zu krass. Suche eine andere Lösung. Auch sieh das Logo dann blöd aus. 
 
-   * favicon
-
-   * Datenschutz: Erneuere die Dienstleisterliste 
    
